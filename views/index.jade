@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Välkommen till en #{title}
+  form(action='/addmail', method='post', name='form1')
+        | E-mail: 
+        input(type='email', name='mail')
+        br
+        br
+        input(type='submit', value='Lägg till')
+        br
+        br
+        br
+        a(href='/admin') Gå till en Email lista

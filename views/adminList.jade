@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Email lista
+    p Här finns alla E-Mail:
+    ul
+        each email in data
+            li ID: #{email.id} &nbsp;&nbsp;&nbsp; Email: #{email.email}
+    br
+    a(href='/') Gå till Startsida

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Admin verktyg
+  p Logga in för att komma vidare
+  form(action='/admin', method='post', name='form1')
+        | Användarnamn: 
+        input(type='text', name='user')
+        br
+        br
+        | Lösenord: 
+        input(type='password', name='pass')
+        br
+        br
+        input(type='submit', value='Logg in')
+        br
+        br
+        br
+        a(href='/') Gå till Startsida
