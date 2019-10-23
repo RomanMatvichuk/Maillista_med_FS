@@ -26,5 +26,9 @@
   {
     "id": 6,
     "email": "siri@mail.com"
+  },
+  {
+    "id": 7,
+    "email": "johan@mail.com"
   }
 ]

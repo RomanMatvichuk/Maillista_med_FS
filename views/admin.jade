@@ -5,15 +5,12 @@ block content
   p Logga in för att komma vidare
   form(action='/admin', method='post', name='form1')
         | Användarnamn: 
-        input(type='text', name='user')
-        br
+        input(class="form-control", style="width: 300px", type='text', name='user')
         br
         | Lösenord: 
-        input(type='password', name='pass')
+        input(class="form-control", style="width: 300px", type='password', name='pass')
         br
-        br
-        input(type='submit', value='Logg in')
-        br
+        input(class="btn btn-primary", type='submit', value='Logg in')
         br
         br
         a(href='/') Gå till Startsida

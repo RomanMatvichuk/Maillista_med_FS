@@ -5,11 +5,9 @@ block content
   p Välkommen till en #{title}
   form(action='/addmail', method='post', name='form1')
         | E-mail: 
-        input(type='email', name='mail')
+        input(class="form-control", style="width: 300px", type='email', name='mail')
         br
-        br
-        input(type='submit', value='Lägg till')
-        br
+        input(class="btn btn-primary", type='submit', value='Lägg till')
         br
         br
         a(href='/admin') Gå till en Email lista
